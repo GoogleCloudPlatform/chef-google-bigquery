@@ -30,14 +30,14 @@ gauth_credential 'mycred' do
   ]
 end
 
-gbigquery_dataset { 'example_dataset':
+gbigquery_dataset 'example_dataset' do
   action :create
-  dataset_reference {
+  dataset_reference ({
     dataset_id: 'example_dataset'
-  }
+  })
   project ENV['PROJECT'] # e.g. 'my-test-project'
   credential 'mycred'
-}```
+end```
 
 ## Credentials
 
