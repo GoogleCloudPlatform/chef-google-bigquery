@@ -37,7 +37,8 @@ gbigquery_dataset 'example_dataset' do
   })
   project ENV['PROJECT'] # e.g. 'my-test-project'
   credential 'mycred'
-end```
+end
+```
 
 ## Credentials
 
