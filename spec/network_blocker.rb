@@ -31,7 +31,7 @@ require 'singleton'
 module Google
   module Bigquery
     # A helper class to block access to the network during tests, while
-    # providing a whitelist escape for the
+    # providing an allowlist escape for the
     # Google::Bigquery::Network::* classes to test themselves, also
     # without accessing the network.
     class NetworkBlocker
